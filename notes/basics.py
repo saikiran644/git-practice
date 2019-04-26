@@ -87,4 +87,11 @@ basic commands
 		git ls-files
 		only on these files git commands like "git rm", "git mv, git checkout" etc., can be used
 		
-		
+14. delete files from git:
+		if any git operations are done, it always brings the changes to the staged area and since they are already staged, the working directory is adjusted to match the staged area only
+	for the file that is modified using git operations.
+		git rm file_in_git
+			this will actually delete the file in the staged area and also the working directory to match the staged area. Now if the file is reset using "git reset HEAD file_in_git", then
+		the file is actually deleted from staged area but the git status shows in untracked changes that the file is deleted. Now if the file has to be restored into the working directory
+		according to the latest HEAD, then "git checkout -- file_in_git" can be specified which restores the file into working directory as in the latest HEAD.
+	
