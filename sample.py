@@ -1,0 +1,1 @@
+# this is just a sample file to check how a new file is treated by git
