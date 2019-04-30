@@ -13,3 +13,11 @@ Source control options:
 		-Ex: Mercurial, Git
 		
 -Distributed source control system
+
+
+Important points:
+
+1. git fetch origin master
+	this will update the local references but will not overwrite the working directory
+	
+2. 

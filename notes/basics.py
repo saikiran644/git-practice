@@ -95,3 +95,9 @@ basic commands
 		the file is actually deleted from staged area but the git status shows in untracked changes that the file is deleted. Now if the file has to be restored into the working directory
 		according to the latest HEAD, then "git checkout -- file_in_git" can be specified which restores the file into working directory as in the latest HEAD.
 	
+15. git alias
+		to run a git command all the time which is very lengthy, one can make an alias for it. Before making an alias one has to check if the git command exists and if not then can proceed
+	with the alias making. If the alias is made for the existing commands then it will not work as the existing commands take the precedence over the config file.
+		git config --global alias.actual_alias_name "command excluding git keyword"
+		Ex:
+			git config --global alias.hist "log --oneline --graph --decorate --all"
